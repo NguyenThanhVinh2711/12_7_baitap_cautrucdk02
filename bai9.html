@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="text" name="canha" id="canha">Cạnh a<br>
+    <input type="text" name="canhb" id="canhb">Cạnh b<br>
+    <input type="text" name="canhc" id="canhc">Cạnh c<br>
+    <div onclick="s()" id="dt">
+    <button>Nhập</button>
+    </div>
+</div>
+<script>
+    function s() {
+        let a = Number(document.getElementById('canha').value)
+        let b = Number(document.getElementById('canhb').value)
+        let c = Number(document.getElementById('canhc').value)
+        if (a > 0 && b > 0 && c > 0 && a+b>c && b + c > a && a + c > b) {
+            document.getElementById('dt').innerText = 'a,b,c cạnh của tam giác'
+        } else {
+            document.getElementById('dt').innerText = 'a,b,c ko phải cạnh của tam giác'
+        }
+    }
+</script>
+</body>
+</html>

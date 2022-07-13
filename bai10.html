@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tiền điện</h1>
+<div>
+    <input type="text" name="sodien" id="sodien">Số điện <br>
+    <button onclick="sd()">Submit</button>
+</div>
+<script>
+    function sd(){
+        let a=Number(document.getElementById('sodien').value)
+        if(0<a<51){
+            sotien=a*1.678
+            document.writeln(sotien)
+        }else if (50<a<101){
+            sotien1=a*1.734
+            document.writeln(sotien1)
+        }else if (100<a<201) {
+            sotien2 = a * 2.014
+            document.writeln(sotien2)
+        }else if (200<a<301){
+                sotien3=a*2.536
+                document.writeln(sotien3)
+        }else if (300<a<401){
+            sotien4=a*2.834
+            document.writeln(sotien4)
+        }else if (400<a){
+            sotien5=a*2.927
+            document.writeln(sotien5)
+        }
+    }
+</script>
+</body>
+</html>

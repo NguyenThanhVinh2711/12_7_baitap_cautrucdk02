@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="text" id="tuoi">Tuổi
+    <div onclick="nhap()" id="s">
+        <button >Nhập</button>
+    </div>
+</div>
+<script>
+    function nhap() {
+        let tuoi = Number(document.getElementById('tuoi').value)
+        if (tuoi > 0 && tuoi < 120) {
+            document.getElementById('s').innerHTML = 'Tuổi một người'
+        } else {
+            document.getElementById('s').innerHTML = 'Không phải tuổi một người'
+        }
+    }
+</script>
+</body>
+</html>

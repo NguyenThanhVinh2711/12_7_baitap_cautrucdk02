@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=Number(prompt('Nhập a'))
+  let b=Number(prompt('Nhập b'))
+  let c=Number(prompt('Nhập c'))
+  if (a==0){
+    }else {
+    let delta =(b**2)-(4*a*c);
+    if (delta==0){
+      x=-b/(2*a);
+      document.writeln(`Phương trình có nghiệm kép:x=${x}`);
+    }else if (delta<0){
+      document.writeln('phương trình vô nghiệm');
+    }else{
+      document.writeln(`phương trình có 2 nghiệm phân biệt`);
+      x1=(-b+Math.sqrt(delta))/(2*a);
+      x2=(-b-Math.sqrt(delta))/(2*a);
+      document.writeln(`nghiệm x1=${x1}`);
+      document.writeln(`nghiệm x2=${x2}`);
+    }
+  }
+</script>
+</body>
+</html>
